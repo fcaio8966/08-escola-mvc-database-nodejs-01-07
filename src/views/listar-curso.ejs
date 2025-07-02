@@ -9,36 +9,45 @@
 
 <body>
     <h1> Lista de cursos</h1>
-    <table>
-        <thead>
-            <tr>
-                <th>ID</th>
-                <th>nome do curso</th>
-                <th>carga horaria</th>
-                <th>escolaridade requirida</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>354</td>
-                <td>Podologia</td>
-                <td>1400H</td>
-                <td>Ensino médio</td>
-            </tr>
-            <tr>
-                <td>355</td>
-                <td>tecnico em informatica</td>
-                <td>1200h</td>
-                <td>Ensino medio</td>
-            </tr>
-            <tr>
-                <td>356</td>
-                <td>moda</td>
-                <td>1200h</td>
-                <td>Graduação</td>
-            </tr>
-        </tbody>
-    </table>
+    <%= cursos %>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>nome do curso</th>
+                    <th>carga horaria</th>
+                    <th>escolaridade requirida</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>354</td>
+                    <td>Podologia</td>
+                    <td>1400H</td>
+                    <td>Ensino médio</td>
+                </tr>
+                <tr>
+                    <td>355</td>
+                    <td>tecnico em informatica</td>
+                    <td>1200h</td>
+                    <td>Ensino medio</td>
+                </tr>
+                <tr>
+                    <td>356</td>
+                    <td>moda</td>
+                    <td>1200h</td>
+                    <td>Graduação</td>
+                </tr>
+            </tbody>
+            <% cursos.forEach(function(curso){ %>
+                <tr>
+                    <td>354</td>
+                    <td>Podologia</td>
+                    <td>1400H</td>
+                    <td>Ensino médio</td>
+                </tr>
+            <%})%>
+        </table>
 </body>
 
 </html>

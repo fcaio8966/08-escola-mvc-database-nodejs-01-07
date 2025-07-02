@@ -4,10 +4,11 @@ const cursoModel = require("../models/curso.model")
 async function listar(request, response) {
   // Chamar a função listarTodosCursos do model
   const cursos = await cursoModel.listarTodosCursos()
+  console.log(cursos)
   
   
 
-  response.json('listar-cuurso')
+  response.json('listar-cuurso',{cursos})
 }
 
 function criar(request, response) {
